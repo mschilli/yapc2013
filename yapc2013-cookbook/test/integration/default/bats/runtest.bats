@@ -2,7 +2,7 @@
 
 @test "restart web app" {
   pid=`sudo status app | awk '{print $4}'`
-  if [ $pid ]
+  if [ "$pid" != "" ]
   then
     sudo stop app
   fi

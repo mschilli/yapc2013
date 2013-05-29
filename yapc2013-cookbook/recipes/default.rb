@@ -37,4 +37,10 @@ psgi_application 'psgi Starman application' do
   socket              ':8080'
   nproc               '2'
   action              'install'
+  notifies :restart, "service[app]"
+end
+
+service "app" do
+  supports :status => true, :start => true, :stop => true, :restart => true
+  action [ :enable ]
 end
