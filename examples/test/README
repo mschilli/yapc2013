@@ -1,0 +1,32 @@
+This is a demo to show how to split a test suite into a unit test
+(run locally on the devbox) and an integration test (run in a vagrant
+VM with the LIVE env variable set.
+
+After building via
+
+    perl Makefile.PL
+
+you can run 
+
+    make test
+
+and see that the live test is skipped locally:
+
+    t/Live.t .. skipped: only with LIVE
+    t/Unit.t .. ok   
+
+When you run
+
+    make livetest
+
+on the other hand, you'll see (given that a vagrant VM named 'ubuntu2'
+is available as a box, change the Vagrantfile isf this is different
+in your dev environment):
+
+    t/Live.t .. ok
+    t/Unit.t .. ok
+    All tests successful.
+    Files=2, Tests=2,  0 wallclock secs ( 0.04 usr  0.04 sys +  0.06 cusr  0.01 csys =  0.15 CPU)
+    Result: PASS
+
+Note how both the unit and tthe LIVE tests have been run in the VM.

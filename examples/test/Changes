@@ -1,0 +1,6 @@
+Revision history for Perl extension Foo.
+
+0.01  Tue May 28 16:53:45 2013
+	- original version; created by h2xs 1.23 with options
+		-AXn Foo
+

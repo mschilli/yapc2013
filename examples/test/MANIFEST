@@ -1,0 +1,8 @@
+Changes
+lib/Foo.pm
+Makefile.PL
+MANIFEST
+README
+t/Live.t
+t/Unit.t
+Vagrantfile
