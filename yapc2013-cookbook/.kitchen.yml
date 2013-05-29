@@ -8,10 +8,14 @@ platforms:
   driver_config:
     box: opscode-centos-6.4
     box_url: https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box
+    network:
+        - ["private_network", {ip: "33.33.33.100"}]
     synced_folders:
-        ../../../../example: /tmp/example
+        ../../../../examples: /tmp/examples
 
 suites:
 - name: default
-  run_list: ["recipe[yapc2013-cookbook]"]
+  run_list:
+    - "recipe[yapc2013-cookbook::default]"
+
   attributes: {}
