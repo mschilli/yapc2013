@@ -21,3 +21,7 @@
   LIVE=1 make -C /tmp/examples/test/ test
 }
 
+@test "test if webserver is running on port 8080" {
+  listen=`netstat -anp --tcp | awk '$6 == "LISTEN" && $4 ~ ".8080"'`
+  [ "$listen" != "" ];
+}
