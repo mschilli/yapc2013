@@ -35,6 +35,7 @@ Run `bats` test suite.
 
     bundle exec kitchen verify
 
+# Author
 
 Mike Schilli - <m@perlmeister.com>  
 Venkat Venkataraju - <venkat.venkataraju@yahoo.com>
