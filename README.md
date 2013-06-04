@@ -1,6 +1,6 @@
 *YAPC 2013 Austin, TX*
 
-"Continuously integrating Perl projects with Vagrant and Puppet/Chef/Salt"
+"Continuously integrating Perl projects with Vagrant"
 
 Mike Schilli, Venkat Venkateraju
 
