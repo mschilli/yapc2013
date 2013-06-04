@@ -2,7 +2,7 @@
 
 "Continuously integrating Perl projects with Vagrant"
 
-Mike Schilli, Venkat Venkateraju
+Mike Schilli, Venkat Venkataraju
 
 To make sure your Perl applications really install and work in new
 environments, they need to be tested in VMs created from scratch. But unless
